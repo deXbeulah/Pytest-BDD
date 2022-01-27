@@ -36,6 +36,8 @@ products = [
 ]
 
 # mark parametrize pytest function: Encourages DIY concept
+# pytest parameter testing make data driven testing easy. 
+# Test files, csvs could be used
 
 @pytest.mark.parametrize('a, b, product', products)
 def test_multiplication(a, b, product):
