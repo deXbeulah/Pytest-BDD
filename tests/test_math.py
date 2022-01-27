@@ -13,13 +13,14 @@ import pytest
 # A most basic test function
 # -------------------------------------------------------------------
 
+@pytest.mark.math
 def test_one_plus_one():
     assert 1 + 1 == 2
 
+@pytest.mark.math
 def test_divide_by_zero():
     with pytest.raises(ZeroDivisionError) as e:
         num = 1 / 0
-
     assert 'division by zero' in str(e.value)
 
 # -------------------------------------------------------------------
@@ -39,6 +40,7 @@ products = [
 # pytest parameter testing make data driven testing easy. 
 # Test files, csvs could be used
 
+@pytest.mark.math
 @pytest.mark.parametrize('a, b, product', products)
 def test_multiplication(a, b, product):
     assert a * b == product
