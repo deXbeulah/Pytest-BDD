@@ -21,3 +21,11 @@ Using ```cd```, change into the folder where you have your python test script on
 
 ```python -m pytest --maxfail=<Number of failures>``` - Exit test after the number of failure specified in <Number offailures>.
 
+## Pytest Plugins
+Pytest html - install: ```pip install pytest-html``` To run: ```python -m pytest --html=<path to html file>```
+
+Pytest code coverage - install: ```pip install pytest-cov``` To run: ```python -m pytest --cov=<test module>```
+
+Pytest xdist - install: ```pip install pytest-xdist``` To run: ```python -m pytest -n <number of dist to run```
+
+Pytest Behaviour Driven Development(BDD) - install: ```pip install pytest-bdd``` To run:
