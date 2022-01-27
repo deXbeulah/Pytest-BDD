@@ -13,12 +13,16 @@ from stuff.accum import Accumulator
 
 
 # ------------------------------------------------------------------------
-# Tests: Arrange, Act, Assert pattern for functional test case.
+# Fixture
 # ------------------------------------------------------------------------
 
 @pytest.fixture
 def accum():
     return Accumulator()
+
+# ------------------------------------------------------------------------
+# Tests: Arrange, Act, Assert pattern for functional test case.
+# ------------------------------------------------------------------------
 
 def test_accumulator_init(accum):
     assert accum.count == 0
