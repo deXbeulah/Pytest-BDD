@@ -28,4 +28,4 @@ Pytest code coverage - install: ```pip install pytest-cov``` To run: ```python -
 
 Pytest xdist - install: ```pip install pytest-xdist``` To run: ```python -m pytest -n <number of dist to run```
 
-Pytest Behaviour Driven Development(BDD) - install: ```pip install pytest-bdd``` To run:
+Pytest Behaviour Driven Development(BDD) - install: ```pip install pytest-bdd```
